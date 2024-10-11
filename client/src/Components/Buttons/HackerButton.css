@@ -1,0 +1,10 @@
+.hacker-button{
+	border: 1px solid var(--lime-green);
+	background-color: var(--background-black);
+	color: var(--lime-green);
+}
+
+.hacker-button:hover{
+	color: var(--background-black);
+	background-color: var(--lime-green);
+}

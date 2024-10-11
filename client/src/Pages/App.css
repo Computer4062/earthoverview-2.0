@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
+body{
+	background-color: var(--background-black);
+	color: white;
+	font-family: "M PLUS Code Latin", monospace;
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar{
+	display: none;
+}
+
+::selection{
+	color: var(--background-black);
+	background: var(--lime-green);
+}
+
+.inv-title{
+	background-color: var(--lime-green);
+	color: var(--background-black);
+	width: max-content;
+	padding: 0 5px 0 5px;
+}
+
+/* Title section */
+.title-section{
+	display: flex;
+	width: max-content;
+	margin-top: 5%;
+	margin-bottom: 7%;
+	gap: 50px;
+}
+
+.title-btn-array{
+	display: flex;
+	gap: 20px;
+}
+
+#Earth{
+	width: 300px;
+	height: 300px;
+	background: url("../Assets/Images/home/home-earth.jpg");
+	background-size: cover;
+	background-repeat: repeat-x;
+	border-radius: 50%;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
+	animation: animateEarth 30s linear infinite;
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 977px)
+{
+	#Earth{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	#Earth{
+		display:  none;
+	}
+}
+
+@keyframes animateEarth
+{
+	0%
+	{
+	background-position: 0 0;
+	}
+	100%
+	{
+	background-position: -750px 0;
+	}
+}
+
+/* Table gen section */
+.table-gen-section{
+	width: max-content;
+	margin-bottom: 5%;
+}
+
+.divider{
+	border: 1px solid var(--lime-green);
+	margin-bottom: 30px;
+}
+
+.icons-gallery{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+.table-icon-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.table-icon-card img:hover{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.table-icon-card img:active{
+	width: 50px;
+	height: 50px;
+}
+
+/* API section */
+.api-section{
+	width: max-content;
+}
+
+.api-info{
+	margin-bottom: 40px;
+}
