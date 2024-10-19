@@ -22,6 +22,4 @@ function convertToCSV(data, fileName) {
   URL.revokeObjectURL(url);
 }
 
-function CallDownloader(fileName){
-  convertToCSV(downloadsList, fileName);
-}
+export default convertToCSV;

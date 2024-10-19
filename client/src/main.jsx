@@ -4,7 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import App from './Pages/App.jsx'
 import './index.css'
 
-import CountryCodesTable from "./Pages/InfoTables/CountryCodes/gen.jsx"
+import CountryCodesTable from "./Pages/InfoTables/CountryCodes/CountryCodes.jsx"
 
 function TablesRouter(){
   return(
