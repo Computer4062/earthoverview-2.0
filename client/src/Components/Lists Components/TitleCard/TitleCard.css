@@ -1,0 +1,11 @@
+.list-title-holder{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list-title{
+	background-color: var(--lime-green);
+	color: black;
+	width: max-content;
+}

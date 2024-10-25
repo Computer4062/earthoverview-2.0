@@ -2,9 +2,9 @@ import React from "react"
 
 function NavBar(){
 	return(
-		<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+		<nav class="navbar border-bottom border-body" style={{backgroundColor: "#0D0C0C"}} data-bs-theme="dark">
 		<div className="container-fluid">
-			<a className="navbar-brand" href="#">EarthOverView</a>
+			<a className="navbar-brand" href="/">EarthOverView</a>
 			<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span className="navbar-toggler-icon"></span>
 			</button>

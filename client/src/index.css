@@ -6,3 +6,10 @@
 .hide{
 	display: none;
 }
+
+.inv-title{
+	background-color: var(--lime-green);
+	color: var(--background-black);
+	width: max-content;
+	padding: 0 5px 0 5px;
+}

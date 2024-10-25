@@ -1,0 +1,14 @@
+.list-table-section{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.align-th-text{
+text-align: center;
+}
+
+.align-td-text{
+text-align: center;
+}

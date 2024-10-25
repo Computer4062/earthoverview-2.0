@@ -1,0 +1,44 @@
+.download-pannel{
+width: 500px;
+border: 1px solid var(--lime-green);
+border-radius: 9px;
+padding: 20px;
+color: var(--lime-green);
+}
+
+/* Div holding the download button (for centering) */
+.download-btn-holder{
+display: flex;
+justify-content: center;
+}
+
+/* Download button styles */
+.download-btn{
+	background-color: black;
+	color: var(--lime-green);
+	border: 1px solid var(--lime-green);
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.download-btn:hover{
+	background-color: var(--lime-green);
+	color: black;
+}
+
+.download-btn:active{
+	background-color: black;
+	color: var(--lime-green);
+}
+/******************/
+
+@media (max-width: 540px)
+{
+	.options-heading{
+		font-size: 18px;
+	}
+
+	.download-pannel{
+		width: 310px;
+	}
+}

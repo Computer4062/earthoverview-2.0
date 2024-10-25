@@ -16,4 +16,22 @@ function FilterContBtns(props){
 	);
 }
 
-export default FilterContBtns;
+// For mobile version selectors are used
+function FilterContSelectors(props){
+	return(
+		<div>
+			<button class="btn btn-dark dropdown-toggle cont-selector-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				{props.label}
+			</button>
+			<ul class="dropdown-menu">
+				{props.items.map((item, index) => (
+					<li key={index}>
+						{item}
+					</li>
+				))}
+			</ul>
+		</div>
+	);
+}
+
+export {FilterContBtns, FilterContSelectors};
