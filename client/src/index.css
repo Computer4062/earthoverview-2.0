@@ -13,3 +13,20 @@
 	width: max-content;
 	padding: 0 5px 0 5px;
 }
+
+body{
+	background-color: var(--background-black);
+	color: white;
+	font-family: "M PLUS Code Latin", monospace;
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar{
+	display: none;
+}
+
+::selection{
+	color: var(--background-black);
+	background: var(--lime-green);
+}

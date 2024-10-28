@@ -1,4 +1,4 @@
-{
+export default{
 	"China": {
         "city": "Beijing",
         "latitude": 39.9042,

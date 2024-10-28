@@ -2,8 +2,6 @@ function convertToCSV(data, fileName) {
   // Create a CSV string
   let csvContent = data.map(row => row.join(',')).join('\n');;
 
-  console.log(csvContent);
-
   // Create a Blob object
   const blob = new Blob([csvContent], { type: 'text/csv' });
 

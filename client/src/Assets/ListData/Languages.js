@@ -1,4 +1,4 @@
-{
+export default {
   "China": {
     "language": ["Mandarin Chinese"],
     "iso639_1": ["zh-Hans-CN"]

@@ -7,9 +7,12 @@ color: var(--lime-green);
 }
 
 /* Div holding the download button (for centering) */
-.download-btn-holder{
+.download-to-csv-card{
 display: flex;
 justify-content: center;
+gap: 10px;
+border: 1px solid var(--lime-green);
+width: 150px;
 }
 
 /* Download button styles */
@@ -17,7 +20,6 @@ justify-content: center;
 	background-color: black;
 	color: var(--lime-green);
 	border: 1px solid var(--lime-green);
-	border-radius: 3px;
 	padding: 5px;
 }
 

@@ -1,4 +1,4 @@
-{
+export default {
   "China": "Chinese",
   "Japan": "Japanese",
   "Mongolia": "Mongolian",

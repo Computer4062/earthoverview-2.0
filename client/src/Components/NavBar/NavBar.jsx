@@ -12,21 +12,20 @@ function NavBar(){
 			<ul className="navbar-nav">
 				<li className="nav-item dropdown">
 				<a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					CSV file generator
+					Downloadables
 				</a>
 				<ul className="dropdown-menu">
-					<li><a className="dropdown-item" href="#">Country Codes</a></li>
-					<li><a className="dropdown-item" href="#">Currencies</a></li>
-					<li><a className="dropdown-item" href="#">Demonyms</a></li>
-					<li><a className="dropdown-item" href="#">Time Conversions</a></li>
-					<li><a className="dropdown-item" href="#">Languages</a></li>
-					<li><a className="dropdown-item" href="#">Country Flags</a></li>
-					<li><a className="dropdown-item" href="#">Capital Cities</a></li>
+					<li><a className="dropdown-item" href="/downloadables/countrycodes">Country Codes</a></li>
+					<li><a className="dropdown-item" href="/downloadables/currencies">Currencies</a></li>
+					<li><a className="dropdown-item" href="/downloadables/demonyms">Demonyms</a></li>
+					<li><a className="dropdown-item" href="/downloadables/timezones">Time Zones</a></li>
+					<li><a className="dropdown-item" href="/downloadables/officiallanguages">Official Languages</a></li>
+					<li><a className="dropdown-item" href="/downloadables/capitalcities">Capital Cities</a></li>
 				</ul>
 				</li>
 				<li className="nav-item">
-				<a class="nav-link" href="#">Time Converter</a>
-				<a class="nav-link" href="#">API Docs</a>
+				<a class="nav-link" href="#">Time Converter - COMMING SOON</a>
+				<a class="nav-link" href="#">API Docs - COMMING SOON</a>
 				</li>
 			</ul>
 			</div>

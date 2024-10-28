@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
 
-body{
-	background-color: var(--background-black);
-	color: white;
-	font-family: "M PLUS Code Latin", monospace;
-	margin: 0;
-	padding: 0;
-}
-
-body::-webkit-scrollbar{
-	display: none;
-}
-
-::selection{
-	color: var(--background-black);
-	background: var(--lime-green);
-}
-
 /* Title section */
 .title-section{
 	display: flex;
@@ -41,21 +24,6 @@ body::-webkit-scrollbar{
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
 	animation: animateEarth 30s linear infinite;
 	opacity: 0.7;
-}
-
-@media screen and (max-width: 977px)
-{
-	#Earth{
-		width: 150px;
-		height: 150px;
-	}
-}
-
-@media screen and (max-width: 768px)
-{
-	#Earth{
-		display:  none;
-	}
 }
 
 @keyframes animateEarth
@@ -111,4 +79,39 @@ body::-webkit-scrollbar{
 
 .api-info{
 	margin-bottom: 40px;
+}
+
+/* For screens of smaller sizes */
+@media screen and (max-width: 977px)
+{
+	#Earth{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 750px)
+{
+	#Earth{
+		display:  none;
+	}
+
+	.title-btn-array{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.table-gen-section{
+		width: 350px;
+	}
+
+	.icons-gallery{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+
+	.api-section{
+		width: 350px;
+	}
 }

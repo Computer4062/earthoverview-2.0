@@ -5,8 +5,7 @@ function TitleCard(props){
 	return(
 		<div class="list-title-holder">
 			<h1 class="list-title inv-title mb-2">{props.title}</h1>
-			<p>{props.description[0]}</p>
-			<p>{props.description[1]}</p>
+			<p>{props.description}</p>
 		</div>
 	);
 }
