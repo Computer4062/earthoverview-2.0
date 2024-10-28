@@ -11,13 +11,13 @@ import languagesRouter from "./routes/Languages.js"
 
 const router = express.Router();
 
-router.use("/CountryCodes", countryCodesRouter);
-router.use("/Demonyms", demonymsRouter);
-router.use("/ISOCodes", isoCountryCodesRouter);
-router.use("/Countries", countriesRouter);
-router.use("/Currencies", currenciesRouter);
-router.use("/CapitalCities", capitalCitiesRouter);
-router.use("/Time", timezonesRouter);
-router.use("/Languages", languagesRouter);
+router.use("/countrycodes", countryCodesRouter);
+router.use("/demonyms", demonymsRouter);
+router.use("/isocodes", isoCountryCodesRouter);
+router.use("/countries", countriesRouter);
+router.use("/currencies", currenciesRouter);
+router.use("/capitalcities", capitalCitiesRouter);
+router.use("/time", timezonesRouter);
+router.use("/languages", languagesRouter);
 
 export default router;
