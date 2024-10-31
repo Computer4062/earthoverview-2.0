@@ -2,75 +2,11 @@ import express from "express"
 import moment_timezone from "moment-timezone"
 import moment from "moment"
 import timezonesJSON from "../models/TimeZones.js"
-import countryNamesJSON from "../models/CountryCodes.js"
 
 const router = express.Router();
 
-/*
-	Obtaining timezones based endpoints
-*/
-
-// Return all the timezones
-router.get("/timezones/all", (req, res) => {
-	res.status(200).json({error: "false", msg: "Successful", data: {timezones: timezonesJSON}});
-});
-
-// Return a single country or timezone
-router.get("/timezones/find", (req, res) => {
-	try{
-		const { country, timezone } = req.query;
-
-		// Return the timezone of a country
-		if(country){
-			const searchItem = decodeURIComponent(country).replace(/\s/g, '').toLowerCase();
-			let found = false;
-			for(const countryName in timezonesJSON){
-				if(countryName.replace(/\s/g, '').toLowerCase() === searchItem)
-				{
-					found = true;
-					res.status(200).json({
-						error: "false",
-						msg: "Successful",
-						data: {timezone: timezonesJSON[countryName]}
-					});
-					break;
-				}
-			}
-
-			if(!found) res.status(404).json({error: "true", msg: "Invalid country name... nothing found"});
-
-		// Return the country of a timezone
-		} else if(timezone){
-			const searchItem = decodeURIComponent(timezone).replace(/\s/g, '').toLowerCase();
-			let found = false;
-			for(const countryName in timezonesJSON){
-				if(timezonesJSON[countryName].replace(/\s/g, '').toLowerCase() === searchItem)
-				{
-					found = true;
-					res.status(200).json({
-						error: "false",
-						msg: "Successful",
-						data: {country: countryName}
-					});
-					break;
-				}
-			}
-
-			if(!found) res.status(404).json({error: "true", msg: "Invalid country name... nothing found"});
-		}
-
-	} catch(error) {
-		console.error(error);
-		res.status(500).json({error: "true", msg: "Something went wrong..."});
-	}
-});
-
-/*
-	Converting time based endpoints
-*/
-
 // Find the time of another country
-router.get("/converter/find", (req, res) => {
+function findTimeIn(req, res) {
 	try
 	{
 		const { timezone, format } = req.query;
@@ -123,7 +59,7 @@ router.get("/converter/find", (req, res) => {
 				}
 				else
 				{
-					res.status(404).json({error: "true", msg: "Invalid timezone..."});
+					res.status(404).json({error: "true", msg: "Unrecognized timezone..."});
 				}
 		}
 
@@ -131,10 +67,10 @@ router.get("/converter/find", (req, res) => {
 		console.error(error);
 		res.status(500).json({error: "true", msg: "Something went wrong..."});
 	}
-});
+}
 
 // Converting time between 2 countries
-router.get("/converter", (req, res) => {
+function convertTime(req, res) {
 	const {timezone1, timezone2, time1, format } = req.query;
 
 	// Check if timezones are valid
@@ -168,9 +104,9 @@ router.get("/converter", (req, res) => {
 		}
 	}
 
-	if(!timezone1found && !timezone2found) res.status(404).json({error: "true", msg: "Invalid timezone1 and timezone2..."});
-	else if(!timezone1found) res.status(404).json({error: "true", msg: "Invalid timezone1..."});
-	else if(!timezone2found) res.status(404).json({error: "true", msg: "Invalid timezone2..."});
+	if(!timezone1found && !timezone2found) res.status(404).json({error: "true", msg: "Unrecognized timezone1 and timezone2..."});
+	else if(!timezone1found) res.status(404).json({error: "true", msg: "Unrecognized timezone1..."});
+	else if(!timezone2found) res.status(404).json({error: "true", msg: "Unrecognized timezone2..."});
 
 	if(timezone1found && timezone2found)
 	{
@@ -199,6 +135,6 @@ router.get("/converter", (req, res) => {
 			res.status(404).json({error: "true", msg: "Invalid format... specify 12hour or 24hour format query paramter(format=12hour)"});
 		}
 	}
-})
+}
 
-export default router;
+export default {findTimeIn, convertTime};
