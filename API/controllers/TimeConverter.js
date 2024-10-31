@@ -1,9 +1,6 @@
-import express from "express"
 import moment_timezone from "moment-timezone"
 import moment from "moment"
 import timezonesJSON from "../models/TimeZones.js"
-
-const router = express.Router();
 
 // Find the time of another country
 function findTimeIn(req, res) {
