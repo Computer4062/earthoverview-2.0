@@ -68,7 +68,7 @@ function findTimeIn(req, res) {
 
 // Converting time between 2 countries
 function convertTime(req, res) {
-	const {timezone1, timezone2, time1, format } = req.query;
+	const {timezone1, timezone2, time, format } = req.query;
 
 	// Check if timezones are valid
 	const inputTimeZone1 = decodeURIComponent(timezone1).replace(/\s/g, '').toLowerCase();
@@ -109,7 +109,7 @@ function convertTime(req, res) {
 	{
 		if(format === "12hour")
 		{
-			const timeMoment = moment.tz(time1, 'hh:mmA', timezone1edit);
+			const timeMoment = moment.tz(time, 'hh:mmA', timezone1edit);
 			const convertedTime = timeMoment.tz(timezone2edit).format('hh:mmA');
 
 			if(convertedTime !== "Invalid date")
@@ -119,7 +119,7 @@ function convertTime(req, res) {
 		}
 		else if(format === "24hour")
 		{
-			const timeMoment = moment.tz(time1, 'hh:mm', timezone1edit);
+			const timeMoment = moment.tz(time, 'hh:mm', timezone1edit);
 			const convertedTime = timeMoment.tz(timezone2edit).format('hh:mm');
 
 			if(convertedTime !== "Invalid date")
