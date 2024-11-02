@@ -25,7 +25,7 @@ function NavBar(){
 				</li>
 				<li className="nav-item">
 				<a class="nav-link" href="#">Time Converter - COMMING SOON</a>
-				<a class="nav-link" href="#">API Docs - COMMING SOON</a>
+				<a class="nav-link" href="https://rapidapi.com/user/mihanedirisinghe">API Docs</a>
 				</li>
 			</ul>
 			</div>

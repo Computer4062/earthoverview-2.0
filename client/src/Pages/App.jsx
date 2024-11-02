@@ -68,7 +68,12 @@ function App() {
           <p>Providing information about countries through an API interface...</p>
         </div>
 
-        <HackerButton text="COMMING SOON" width="200px" height="45px" borderRadius="3px" />
+        <HackerButton 
+          text="Read DOCS" 
+          width="200px" height="45px" 
+          borderRadius="3px" 
+          onClick={() => window.location.href="https://rapidapi.com/user/mihanedirisinghe"} 
+        />
       </div>
 
       <Footer />
