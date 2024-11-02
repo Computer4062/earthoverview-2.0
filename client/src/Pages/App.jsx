@@ -4,7 +4,7 @@ import HackerButton from "../Components/Buttons/HackerButton.jsx"
 import NavBar from "../Components/NavBar/NavBar.jsx"
 import Footer from "../Components/Footer/Footer.jsx"
 
-import telephoneIcon from '../Assets/images/home/telephone icon.png'
+import telephoneIcon from '../Assets/images/home/telephone-icon.png'
 import moneyIcon from '../Assets/images/home/money-bag.png'
 import demonymsIcon from '../Assets/images/home/people.png'
 import alarmIcon from '../Assets/images/home/alarm.png'
