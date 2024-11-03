@@ -4,7 +4,7 @@ import HackerButton from "../Components/Buttons/HackerButton.jsx"
 import NavBar from "../Components/NavBar/NavBar.jsx"
 import Footer from "../Components/Footer/Footer.jsx"
 
-import telephoneIcon from '../Assets/images/home/telephone-icon.png'
+import telephoneIcon from "../../public/telephone-icon.png"
 import moneyIcon from '../Assets/images/home/money-bag.png'
 import demonymsIcon from '../Assets/images/home/people.png'
 import alarmIcon from '../Assets/images/home/alarm.png'
@@ -38,7 +38,7 @@ function App() {
 
           <div className="title-btn-array mt-4">
             <HackerButton text="Downloadables" width="200px" height="45px" borderRadius="3px" onClick={scrollToDownloadables} />
-            <HackerButton text="API" width="200px" height="45px" borderRadius="3px" />
+            <HackerButton text="API" width="200px" height="45px" borderRadius="3px" onClick={() => window.location.href="https://rapidapi.com/user/mihanedirisinghe"} />
           </div>
         </div>
 
