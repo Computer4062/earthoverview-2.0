@@ -4,12 +4,12 @@ import HackerButton from "../Components/Buttons/HackerButton.jsx"
 import NavBar from "../Components/NavBar/NavBar.jsx"
 import Footer from "../Components/Footer/Footer.jsx"
 
-import telephoneIcon from "../../public/telephone-icon.png"
-import moneyIcon from '../Assets/images/home/money-bag.png'
-import demonymsIcon from '../Assets/images/home/people.png'
-import alarmIcon from '../Assets/images/home/alarm.png'
-import bookIcon from '../Assets/images/home/book.png'
-import skyscraperIcon from '../Assets/images/home/skyscraper.png'
+import telephoneIcon from "../../public/Images/home/telephone-icon.png"
+import moneyIcon from '../../public/Images/home/money-bag.png'
+import demonymsIcon from '../../public/Images/home/people.png'
+import alarmIcon from '../../public/Images/home/alarm.png'
+import bookIcon from '../../public/Images/home/book.png'
+import skyscraperIcon from '../../public/Images/home/skyscraper.png'
 
 function TableIconCards({img, text, href}){
   return (
