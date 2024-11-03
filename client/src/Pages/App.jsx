@@ -57,7 +57,7 @@ function App() {
             <TableIconCards img={moneyIcon} text="Currencies" href="/downloadables/currencies"/>
             <TableIconCards img={demonymsIcon} text="Demonyms" href="/downloadables/demonyms"/>
             <TableIconCards img={alarmIcon} text="Time Zones" href="/downloadables/timezones"/>
-            <TableIconCards img={bookIcon} text="Languages" href="/downloadables/languages"/>
+            <TableIconCards img={bookIcon} text="Official Languages" href="/downloadables/officiallanguages"/>
             <TableIconCards img={skyscraperIcon} text="Capital Cities" href="/downloadables/capitalcities"/>
         </div>
       </div>
