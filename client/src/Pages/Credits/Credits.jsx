@@ -31,6 +31,7 @@ function Credits(){
 				<a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a>
 				<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by flatart_icons - Flaticon</a>
 				<a href="https://www.flaticon.com/free-icons/globe" title="globe icons">Globe icons created by Freepik - Flaticon</a>
+				<a href="https://www.flaticon.com/free-icons/africa" title="africa icons">Africa icons created by Freepik - Flaticon</a>
 			</div>
 		</>
 	);

@@ -10,6 +10,7 @@ import demonymsIcon from '../../public/Images/home/people.png'
 import alarmIcon from '../../public/Images/home/alarm.png'
 import bookIcon from '../../public/Images/home/book.png'
 import skyscraperIcon from '../../public/Images/home/skyscraper.png'
+import countriesIcon from '../../public/Images/home/countries.png'
 
 function TableIconCards({img, text, href}){
   return (
@@ -59,6 +60,7 @@ function App() {
             <TableIconCards img={alarmIcon} text="Time Zones" href="/downloadables/timezones"/>
             <TableIconCards img={bookIcon} text="Official Languages" href="/downloadables/officiallanguages"/>
             <TableIconCards img={skyscraperIcon} text="Capital Cities" href="/downloadables/capitalcities"/>
+            <TableIconCards img={countriesIcon} text="Country Names" href="/downloadables/countries"/>
         </div>
       </div>
 

@@ -14,13 +14,14 @@ function NavBar(){
 				<a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Downloadables
 				</a>
-				<ul className="dropdown-menu">
+				<ul className="dropdown-menu  bg-opacity-75">
 					<li><a className="dropdown-item" href="/downloadables/countrycodes">Country Codes</a></li>
 					<li><a className="dropdown-item" href="/downloadables/currencies">Currencies</a></li>
 					<li><a className="dropdown-item" href="/downloadables/demonyms">Demonyms</a></li>
 					<li><a className="dropdown-item" href="/downloadables/timezones">Time Zones</a></li>
 					<li><a className="dropdown-item" href="/downloadables/officiallanguages">Official Languages</a></li>
 					<li><a className="dropdown-item" href="/downloadables/capitalcities">Capital Cities</a></li>
+					<li><a className="dropdown-item" href="/downloadables/countries">Country Names</a></li>
 				</ul>
 				</li>
 				<li className="nav-item">
