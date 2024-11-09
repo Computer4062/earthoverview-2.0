@@ -11,29 +11,17 @@ function findTimeIn(req, res) {
 		if(timezone) {
 				// Check if timezone is valid
 				let valid = false;
-				const inputTimeZone = decodeURIComponent(timezone).replace(/\s/g, '').toLowerCase();
-				let timezoneEdit = "";
+				const inputTimeZone = decodeURIComponent(timezone).replace(' ', '+'); // Query params doesn't recognize + signs
+																					  // so replace space with + signs
 
-				for(const countryName in timezonesJSON)
-				{
-					for(let i = 0; i < timezonesJSON[countryName].length; i++)
-					{
-						if(timezonesJSON[countryName][i].replace(/\s/g, '').toLowerCase() === inputTimeZone)
-						{
-							timezoneEdit = timezonesJSON[countryName][i];
-							valid = true;
-							break;
-						}
-					}
-
-					if(valid) break;
-				}
+				if(moment.tz.zone(inputTimeZone) !== null) valid = true;
+				else valid = false;
 
 				if(valid)
 				{
 					if(format === "12hour")
 					{
-						const time = moment().tz(timezoneEdit).format('hh:mmA');
+						const time = moment().tz(inputTimeZone).format('hh:mmA');
 
 						res.status(200).json({
 							error: "false", 
@@ -42,7 +30,7 @@ function findTimeIn(req, res) {
 						});
 
 					} else if(format === "24hour") {
-						const time = moment().tz(timezoneEdit).format('HH:mm');
+						const time = moment().tz(inputTimeZone).format('HH:mm');
 
 						res.status(200).json({
 							error: "false",

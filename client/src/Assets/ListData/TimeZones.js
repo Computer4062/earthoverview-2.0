@@ -1,7 +1,6 @@
 export default {
 	"China": [
 		"Asia/Shanghai",
-		"a"
 	],
 	"Japan": [
 		"Asia/Tokyo"

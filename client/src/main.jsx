@@ -11,6 +11,7 @@ import TimeZonesDownloadablesPage from "./Pages/Downloadables/TimeZones/TimeZone
 import LanguagesDownloadablesPage from "./Pages/Downloadables/Languages/Languages.jsx"
 import CapitalCitiesDownloadablesPage from "./Pages/Downloadables/CapitalCities/CapitalCities.jsx"
 import CountryNamesDownloadablesPage from "./Pages/Downloadables/CountryNames/CountryNames.jsx"
+import CountryFlagsDownloadablesPage from './Pages/Downloadables/CountryFlags/CountryFlags.jsx'
 
 import Credits from "./Pages/Credits/Credits.jsx"
 
@@ -26,6 +27,7 @@ function TablesRouter(){
         <Route path="/downloadables/officiallanguages" element={<LanguagesDownloadablesPage />} />
         <Route path="/downloadables/capitalcities" element={<CapitalCitiesDownloadablesPage />} />
         <Route path="/downloadables/countries" element={<CountryNamesDownloadablesPage />} />
+        <Route path="/downloadables/countryflags" element={<CountryFlagsDownloadablesPage />} />
 
         <Route path="/credits" element={<Credits />} />
       </Routes>
