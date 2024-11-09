@@ -27,7 +27,6 @@ function TablesRouter(){
         <Route path="/downloadables/officiallanguages" element={<LanguagesDownloadablesPage />} />
         <Route path="/downloadables/capitalcities" element={<CapitalCitiesDownloadablesPage />} />
         <Route path="/downloadables/countries" element={<CountryNamesDownloadablesPage />} />
-        <Route path="/downloadables/countryflags" element={<CountryFlagsDownloadablesPage />} />
 
         <Route path="/credits" element={<Credits />} />
       </Routes>
@@ -37,3 +36,5 @@ function TablesRouter(){
 
 // Render home page
 createRoot(document.getElementById('root')).render(<TablesRouter />);
+
+//        <Route path="/downloadables/countryflags" element={<CountryFlagsDownloadablesPage />} />
