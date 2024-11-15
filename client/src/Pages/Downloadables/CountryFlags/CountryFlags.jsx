@@ -45,7 +45,7 @@ function CountryFlags(){
 				description="Download list of 153 country flags, image names will be iso codes"
 			/>
 
-			<DownloadToZipCard array={downloadArray} fileName="Flags" path="../../../public/Images/flags/" />
+			<DownloadToZipCard array={downloadArray} fileName="Flags" path="../../../../public/Images/flags/" />
 		</section>
 
 		<section class="list-table-section mt-5">
