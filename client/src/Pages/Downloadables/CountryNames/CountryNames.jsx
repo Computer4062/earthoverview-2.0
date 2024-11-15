@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import { Helmet } from "react-helmet"
 
 import countries from "../../../Assets/ListData/Countries.js"
 
@@ -8,6 +9,16 @@ import NavBar from "../../../Components/NavBar/NavBar.jsx"
 import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
+
+function MetaData(){
+	return (
+		<Helmet>
+			<title>List of Country Names - EarthOverView</title>
+			<meta name="description" content="Download a list of 196 country names and their continents" />
+			<meta name="keywords" content="list of country names continents" />
+		</Helmet>
+	);
+}
 
 function CountryNames(){
 	const [tableContent, setTableContent] = useState(''); // hold html content of the table
@@ -43,6 +54,7 @@ function CountryNames(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import {Helmet} from "react-helmet"
 
 import timezones from "../../../Assets/ListData/TimeZones.js"
 import countries from "../../../Assets/ListData/Countries.js"
@@ -9,6 +10,16 @@ import NavBar from "../../../Components/NavBar/NavBar.jsx"
 import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
+
+function MetaData(){
+	return (
+		<Helmet>
+			<title>List of Time Zones - EarthOverView</title>
+			<meta name="description" content="Download a list of time zones for 196 countries" />
+			<meta name="keywords" content="list of time zones" />
+		</Helmet>
+	);
+}
 
 function TimeZones(){
 	const [tableContent, setTableContent] = useState(''); // hold html content of the table
@@ -25,7 +36,7 @@ function TimeZones(){
 				{
 				array.push([
 					country,
-					timezones[country], // <-- might want to change this in the future
+					timezones[country],
 					continent
 				]);
 				}
@@ -49,6 +60,7 @@ function TimeZones(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

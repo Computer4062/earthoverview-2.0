@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import { Helmet } from "react-helmet"
 
 import isocodes from "../../../Assets/ListData/ISOCountryCodes.js"
 import {arrayOfImages, codes} from "../../../Assets/ListData/CountryFlags.js"
@@ -9,6 +10,16 @@ import NavBar from "../../../Components/NavBar/NavBar.jsx"
 import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
+
+function MetaData(){
+	return (
+		<Helmet>
+			<title>Country Flags Zip file - EarthOverView</title>
+			<meta name="description" content="Download a zip file with images of country flags" />
+			<meta name="keywords" content="zip file country flags" />
+		</Helmet>
+	);
+}
 
 function CountryFlags(){
 	const [downloadArray, setDownloadArray] = useState([]); // hold array of the table for downloading
@@ -26,6 +37,7 @@ function CountryFlags(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

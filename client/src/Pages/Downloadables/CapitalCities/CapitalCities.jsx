@@ -10,6 +10,16 @@ import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
 
+function MetaData(){
+	return (
+		<Helmet>
+			<title>List of Capital Cities - EarthOverView</title>
+			<meta name="description" content="Download list of capital cities, longitudes, latitudes for 196 countries" />
+			<meta name="keywords" content="list of capital cities longitudes latitudes" />
+		</Helmet>
+	);
+}
+
 function CapitalCities(){
 	const [tableContent, setTableContent] = useState(''); // hold html content of the table
 	const [tableArray, setTableArray] = useState([]); // hold array of the table for downloading
@@ -50,6 +60,7 @@ function CapitalCities(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

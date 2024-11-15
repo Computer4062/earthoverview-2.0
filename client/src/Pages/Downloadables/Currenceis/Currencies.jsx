@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import { Helmet } from "react-helmet"
 
 import currencies from "../../../Assets/ListData/Currencies.js"
 import countries from "../../../Assets/ListData/Countries.js"
@@ -9,6 +10,16 @@ import NavBar from "../../../Components/NavBar/NavBar.jsx"
 import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
+
+function MetaData(){
+	return (
+		<Helmet>
+			<title>List of Currencies - EarthOverView</title>
+			<meta name="description" content="Download a list of currency codes, units, symbols, names used in 196 countries" />
+			<meta name="keywords" content="list of currency codes units symbols names" />
+		</Helmet>
+	);
+}
 
 function Currencies(){
 	const [tableContent, setTableContent] = useState(''); // hold html content of the table
@@ -52,6 +63,7 @@ function Currencies(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import {Helmet} from "react-helmet"
 
 import languages from "../../../Assets/ListData/Languages.js"
 import countries from "../../../Assets/ListData/Countries.js"
@@ -9,6 +10,16 @@ import NavBar from "../../../Components/NavBar/NavBar.jsx"
 import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
+
+function MetaData(){
+	return (
+		<Helmet>
+			<title>List of Official Languages - EarthOverView</title>
+			<meta name="description" content="Download list of official languages, language codes for 196 countries" />
+			<meta name="keywords" content="list of official languages language codes" />
+		</Helmet>
+	);
+}
 
 function Languages(){
 	const [tableContent, setTableContent] = useState(''); // hold html content of the table
@@ -48,6 +59,7 @@ function Languages(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

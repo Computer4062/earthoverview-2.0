@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react"
+import { Helmet } from "react-helmet"
 
 import demonyms from "../../../Assets/ListData/Demonyms.js"
 import countries from "../../../Assets/ListData/Countries.js"
@@ -9,6 +10,16 @@ import NavBar from "../../../Components/NavBar/NavBar.jsx"
 import Footer from "../../../Components/Footer/Footer.jsx"
 
 import "../../../Components/Lists Components/Table/Table.css"
+
+function MetaData(){
+	return (
+		<Helmet>
+			<title>List of Demonyms - EarthOverView</title>
+			<meta name="description" content="Download a list of Demonyms for people in 196 countries" />
+			<meta name="keywords" content="list of demonyms" />
+		</Helmet>
+	);
+}
 
 function Demonyms(){
 	const [tableContent, setTableContent] = useState(''); // hold html content of the table
@@ -46,6 +57,7 @@ function Demonyms(){
 
 	return (
 		<>
+		<MetaData />
 		<NavBar />
 		<section className="mt-5">
 			<TitleCard

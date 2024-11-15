@@ -1,0 +1,8 @@
+https://www.earthoverview.info/downloadables/countrycodes
+https://www.earthoverview.info/downloadables/currencies
+https://www.earthoverview.info/downloadables/demonyms
+https://www.earthoverview.info/downloadables/timezones
+https://www.earthoverview.info/downloadables/officiallanguages
+https://www.earthoverview.info/downloadables/capitalcities
+https://www.earthoverview.info/downloadables/countries
+https://www.earthoverview.info/downloadables/countryflags
