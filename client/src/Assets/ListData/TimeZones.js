@@ -1,9 +1,13 @@
 export default {
 	"China": [
 		"Asia/Shanghai",
+		"UTC+8",
+		"Etc/GMT+8"
 	],
 	"Japan": [
-		"Asia/Tokyo"
+		"Asia/Tokyo",
+		"UTC+9",
+		"Etc/GMT+9",
 	],
 	"Mongolia": [
 		"Asia/Ulaanbaatar"
@@ -327,10 +331,14 @@ export default {
 		"Europe/Helsinki"
 	],
 	"France": [
-		"Europe/Paris"
+		"Europe/Paris",
+		"UTC+1",
+		"Etc/GMT+1"
 	],
 	"Germany": [
-		"Europe/Berlin"
+		"Europe/Berlin",
+		"UTC+1",
+		"Etc/GMT+1"
 	],
 	"Greece": [
 		"Europe/Athens"
@@ -345,7 +353,9 @@ export default {
 		"Europe/Dublin"
 	],
 	"Italy": [
-		"Europe/Rome"
+		"Europe/Rome",
+		"UTC+1",
+		"Etc/GMT+1"
 	],
 	"Latvia": [
 		"Europe/Riga"
@@ -390,7 +400,9 @@ export default {
 		"Europe/Bucharest"
 	],
 	"Russia": [
-		"Europe/Moscow"
+		"Europe/Moscow",
+		"UTC+3",
+		"Etc/GMT+3"
 	],
 	"San Marino": [
 		"Europe/Rome"
@@ -417,7 +429,9 @@ export default {
 		"Europe/Kiev"
 	],
 	"United Kingdom": [
-		"Europe/London"
+		"Europe/London",
+		"UTC+0",
+		"Etc/GMT+0"
 	],
 	"Vatican City": [
 		"Europe/Rome"
@@ -429,7 +443,9 @@ export default {
 		"America/La_Paz"
 	],
 	"Brazil": [
-		"America/Sao_Paulo"
+		"America/Sao_Paulo",
+		"UTC-3",
+		"Etc/GMT+3"
 	],
 	"Chile": [
 		"America/Santiago"
@@ -459,10 +475,14 @@ export default {
 		"America/Caracas"
 	],
 	"Canada": [
-		"America/Toronto"
+		"America/Toronto",
+		"UTC-5",
+		"Etc/GMT+5"
 	],
 	"United States": [
-		"America/New_York"
+		"America/New_York",
+		"UTC-5",
+		"Etc/GMT+5"
 	],
 	"Mexico": [
 		"America/Mexico_City"
@@ -525,7 +545,9 @@ export default {
 		"America/St_Vincent"
 	],
 	"Australia": [
-		"Australia/Sydney"
+		"Australia/Sydney",
+		"UTC+11",
+		"Etc/GMT+11"
 	],
 	"New Zealand": [
 		"Pacific/Auckland"

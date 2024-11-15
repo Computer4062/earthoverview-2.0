@@ -65,7 +65,7 @@ function TimeZones(){
 		<section className="mt-5">
 			<TitleCard
 				title="TimeZones"
-				description="Download list of 192 timezones from 192 countries"
+				description="Download list of 192 timezones from 192 countries, (Etc/GMT is the samething as UTC)"
 			/>
 
 			<DownloadCard array={tableArray} fileName="TimeZones" />
