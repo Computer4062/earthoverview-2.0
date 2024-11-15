@@ -14,7 +14,7 @@ function MetaData(){
 	return (
 		<Helmet>
 			<title>Country Flags Zip file - EarthOverView</title>
-			<meta name="description" content="Download a zip file with images of country flags" />
+			<meta name="description" content="Download a zip file with images of 178 country flags" />
 			<meta name="keywords" content="zip file country flags" />
 		</Helmet>
 	);
@@ -28,7 +28,7 @@ function CountryFlags(){
 		<section className="mt-5">
 			<TitleCard
 				title="Country Flags"
-				description="Download list of 153 country flags, image names will be iso codes"
+				description="Download zip file of 178 country flags, image names will be iso codes"
 			/>
 
 			<div class="w-100 d-flex justify-content-center">
