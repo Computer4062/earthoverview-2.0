@@ -1,3 +1,5 @@
+import React from "react"
+
 import './App.css'
 
 import HackerButton from "../Components/Buttons/HackerButton.jsx"
@@ -12,10 +14,6 @@ import bookIcon from '../../public/Images/home/book.png'
 import skyscraperIcon from '../../public/Images/home/skyscraper.png'
 import countriesIcon from '../../public/Images/home/countries.png'
 import countryFlagsIcon from '../../public/Images/home/flag.png'
-
-import React, { useEffect } from "react"
-
-import moment from "moment-timezone"
 
 function TableIconCards({img, text, href}){
   return (
