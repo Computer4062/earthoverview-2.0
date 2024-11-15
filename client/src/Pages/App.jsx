@@ -65,6 +65,7 @@ function App() {
             <TableIconCards img={bookIcon} text="Official Languages" href="/downloadables/officiallanguages"/>
             <TableIconCards img={skyscraperIcon} text="Capital Cities" href="/downloadables/capitalcities"/>
             <TableIconCards img={countriesIcon} text="Country Names" href="/downloadables/countries"/>
+            <TableIconCards img={countryFlagsIcon} text="Country Flags" href="/downloadables/countryflags"/>
         </div>
       </div>
 
@@ -86,7 +87,5 @@ function App() {
     </div>
   );
 }
-
-//            <TableIconCards img={countryFlagsIcon} text="Country Flags" href="/downloadables/countryflags"/>
 
 export default App
