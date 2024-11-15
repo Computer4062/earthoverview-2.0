@@ -151,6 +151,31 @@ import YE from "../../../public/Images/flags/YE.svg"
 import ZA from "../../../public/Images/flags/ZA.svg"
 import ZM from "../../../public/Images/flags/ZM.svg"
 import ZW from "../../../public/Images/flags/ZW.svg"
+import AF from "../../../public/Images/flags/AF.svg"
+import OM from "../../../public/Images/flags/OM.svg"
+import SN from "../../../public/Images/flags/SN.svg"
+import SL from "../../../public/Images/flags/SL.svg"
+import TG from "../../../public/Images/flags/TG.svg"
+import BI from "../../../public/Images/flags/BI.svg"
+import DJ from "../../../public/Images/flags/DJ.svg"
+import ER from "../../../public/Images/flags/ER.svg"
+import ET from "../../../public/Images/flags/ET.svg"
+import KE from "../../../public/Images/flags/KE.svg"
+import MG from "../../../public/Images/flags/MG.svg"
+import MW from "../../../public/Images/flags/MW.svg"
+import MU from "../../../public/Images/flags/MU.svg"
+import MZ from "../../../public/Images/flags/MZ.svg"
+import RW from "../../../public/Images/flags/RW.svg"
+import SC from "../../../public/Images/flags/SC.svg"
+import SO from "../../../public/Images/flags/SO.svg"
+import SM from "../../../public/Images/flags/SM.svg"
+import RS from "../../../public/Images/flags/RS.svg"
+import SK from "../../../public/Images/flags/SK.svg"
+import SI from "../../../public/Images/flags/SI.svg"
+import ES from "../../../public/Images/flags/ES.svg"
+import VA from "../../../public/Images/flags/VA.svg"
+import HT from "../../../public/Images/flags/HT.svg"
+import DO from "../../../public/Images/flags/DO.svg"
 
 const arrayOfImages = [
     AD,
@@ -305,7 +330,32 @@ const arrayOfImages = [
     YE,
     ZA,
     ZM,
-    ZW
+    ZW,
+	AF,
+	OM,
+	SN,
+	SL,
+	TG,
+	BI,
+	DJ,
+	ER,
+	ET,
+	KE,
+	MG,
+	MW,
+	MU,
+	MZ,
+	RW,
+	SC,
+	SO,
+	SM,
+	RS,
+	SK,
+	SI,
+	ES,
+	VA,
+	HT,
+	DO
 ]
 
 const codes = [
@@ -461,7 +511,32 @@ const codes = [
 	'YE',
 	'ZA',
 	'ZM',
-	'ZW'
+	'ZW',
+	'AF',
+	'OM',
+	'SN',
+	'SL',
+	'TG',
+	'BI',
+	'DJ',
+	'ER',
+	'ET',
+	'KE',
+	'MG',
+	'MW',
+	'MU',
+	'MZ',
+	'RW',
+	'SC',
+	'SO',
+	'SM',
+	'RS',
+	'SK',
+	'SI',
+	'ES',
+	'VA',
+	'HT',
+	'DO'
 ];
 
 export {arrayOfImages, codes}
