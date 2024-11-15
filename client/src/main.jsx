@@ -12,6 +12,7 @@ import LanguagesDownloadablesPage from "./Pages/Downloadables/Languages/Language
 import CapitalCitiesDownloadablesPage from "./Pages/Downloadables/CapitalCities/CapitalCities.jsx"
 import CountryNamesDownloadablesPage from "./Pages/Downloadables/CountryNames/CountryNames.jsx"
 import CountryFlagsDownloadablesPage from './Pages/Downloadables/CountryFlags/CountryFlags.jsx'
+import ISOCodesDownloadablesPage from './Pages/Downloadables/CountryCodesISO/CountryCodesISO.jsx'
 
 import Credits from "./Pages/Credits/Credits.jsx"
 
@@ -28,6 +29,7 @@ function TablesRouter(){
         <Route path="/downloadables/capitalcities" element={<CapitalCitiesDownloadablesPage />} />
         <Route path="/downloadables/countries" element={<CountryNamesDownloadablesPage />} />
         <Route path="/downloadables/countryflags" element={<CountryFlagsDownloadablesPage />} />
+        <Route path="/downloadables/isocodes" element={<ISOCodesDownloadablesPage />} />
 
         <Route path="/credits" element={<Credits />} />
       </Routes>

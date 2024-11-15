@@ -14,6 +14,7 @@ import bookIcon from '../../public/Images/home/book.png'
 import skyscraperIcon from '../../public/Images/home/skyscraper.png'
 import countriesIcon from '../../public/Images/home/countries.png'
 import countryFlagsIcon from '../../public/Images/home/flag.png'
+import isoCodesIcon from "../../public/Images/home/isocodes.png"
 
 function TableIconCards({img, text, href}){
   return (
@@ -64,6 +65,7 @@ function App() {
             <TableIconCards img={skyscraperIcon} text="Capital Cities" href="/downloadables/capitalcities"/>
             <TableIconCards img={countriesIcon} text="Country Names" href="/downloadables/countries"/>
             <TableIconCards img={countryFlagsIcon} text="Country Flags" href="/downloadables/countryflags"/>
+            <TableIconCards img={isoCodesIcon} text="ISO Country Codes" href="/downloadables/isocodes"/>
         </div>
       </div>
 

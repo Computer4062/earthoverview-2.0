@@ -6,3 +6,4 @@ https://www.earthoverview.info/downloadables/officiallanguages
 https://www.earthoverview.info/downloadables/capitalcities
 https://www.earthoverview.info/downloadables/countries
 https://www.earthoverview.info/downloadables/countryflags
+https://www.earthoverview.info/downloadables/isocodes
