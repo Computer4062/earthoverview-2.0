@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React from "react"
 
 import './App.css'
 
@@ -15,9 +15,6 @@ import skyscraperIcon from '../../public/Images/home/skyscraper.png'
 import countriesIcon from '../../public/Images/home/countries.png'
 import countryFlagsIcon from '../../public/Images/home/flag.png'
 
-import isocodes from "../Assets/ListData/ISOCountryCodes.js"
-import {codes} from "../Assets/ListData/CountryFlags.js"
-
 function TableIconCards({img, text, href}){
   return (
     <div className="table-icon-card" onClick={() => window.location=href}>
@@ -33,29 +30,6 @@ const scrollToDownloadables = () => {
 }
 
 function App() {
-  useEffect(() => {
-    let unfound_codes = [];
-    for(const code in isocodes)
-    {
-      let found = false;
-      for(let i = 0; i < codes.length; i++)
-      {
-        if(codes[i] === code)
-        {
-          found = true;
-          break;
-        }
-      }
-
-      if(!found)
-      {
-        unfound_codes.push(code);
-      }
-    }
-
-    console.log(unfound_codes);
-  }, []);
-
   return (
     <div>
       <NavBar />
@@ -89,7 +63,7 @@ function App() {
             <TableIconCards img={bookIcon} text="Official Languages" href="/downloadables/officiallanguages"/>
             <TableIconCards img={skyscraperIcon} text="Capital Cities" href="/downloadables/capitalcities"/>
             <TableIconCards img={countriesIcon} text="Country Names" href="/downloadables/countries"/>
-            
+            <TableIconCards img={countryFlagsIcon} text="Country Flags" href="/downloadables/countryflags"/>
         </div>
       </div>
 
@@ -111,7 +85,5 @@ function App() {
     </div>
   );
 }
-
-//<TableIconCards img={countryFlagsIcon} text="Country Flags" href="/downloadables/countryflags"/>
 
 export default App
