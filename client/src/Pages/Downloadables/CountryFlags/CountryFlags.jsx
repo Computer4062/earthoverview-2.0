@@ -28,7 +28,7 @@ function CountryFlags(){
 		<section className="mt-5">
 			<TitleCard
 				title="Country Flags"
-				description="Download zip file of 178 country flags, image names will be iso codes"
+				description="Download zip file of 178 country flags, image names will be iso codes, all images are free for commercial use."
 			/>
 
 			<div class="w-100 d-flex justify-content-center">
